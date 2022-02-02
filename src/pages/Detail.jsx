@@ -31,7 +31,7 @@ export default class Detail extends Component{
           <div className="row">
             <div className="col-10 mx-auto">
               <p>Date: { post.date }</p>
-              <h2>{ post.blog_title }</h2>
+              <h2 className='title-pink'>{ post.blog_title }</h2>
               <p>Category: { post.categories }</p>
               <p>Author: { post.author }</p>
               <br></br>

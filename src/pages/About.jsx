@@ -10,7 +10,7 @@ export default class About extends Component{
     render() {
         return (
             <div className="container">
-                <h1>About Page</h1>
+                <h2>About</h2>
                 <p>Contentstack™ is the hub powering omnichannel content, digital experiences, 
                     and personalized customer journeys. It is the industry 
                     leader in the headless content management system (CMS) category. 

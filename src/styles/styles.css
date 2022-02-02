@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
     background: #fafafa;
     color: #333333;
     margin-top: 7rem;
     margin-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -25,4 +26,7 @@ body {
   
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
+  }
+  .title-pink{
+    color: #e41749;
   }
