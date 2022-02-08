@@ -28,7 +28,7 @@ export default class Home extends Component{
           {
             post.map((value, index) => {
               return (
-              <div className="card mb-5" style={{width: "300px"}}>
+              <div className="card mb-5" style={{width: "300px"}} key={index}>
                 <div className="card-header">
                   { value.categories }
                 </div>
