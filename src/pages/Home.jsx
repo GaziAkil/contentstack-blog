@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react'
 import '../styles/styles.css'
 import { Link } from 'react-router-dom'
@@ -28,7 +27,7 @@ export default class Home extends Component{
           {
             post.map((value, index) => {
               return (
-              <div className="card mb-5" style={{width: "300px"}} key={index}>
+              <div className="card mb-5 mx-auto" style={{width: "300px"}} key={index}>
                 <div className="card-header">
                   { value.categories }
                 </div>
@@ -48,8 +47,7 @@ export default class Home extends Component{
         </main>
       )
     }
-
-  
+    
     render () {
       const {loading, result} = this.state
       return (this.state.loading) ? <div className='container'><h2>loading...</h2></div> : this.renderList(result[0])

@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import { Stack } from '../common/contentstack-api/api'
 import '../styles/styles.css'
-
-
 export default class Detail extends Component{
     constructor(props) {
       super(props)

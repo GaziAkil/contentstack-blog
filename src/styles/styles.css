@@ -6,12 +6,16 @@ body {
     margin-bottom: 4rem;
     font-family: 'Poppins', sans-serif;
   }
-  
+  p{
+    font-size: 15px !important;
+  }
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
   }
-  
-  .bg-steel {
+  .bg-dark{
+    background-color: #3e3636;
+  }
+  .bg-pink {
     background-color: #e41749;
   }
   
