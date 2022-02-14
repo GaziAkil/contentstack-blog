@@ -1,15 +1,14 @@
 import React, {Component} from 'react'
 import '../styles/styles.css'
-import { Link } from 'react-router-dom'
 import { Stack } from '../common/contentstack-api/api'
 
-export default class Footer extends Component{
+export default class Hero extends Component{
     constructor() {
       super()
       this.state = { loading : true, result: null }
     }
     componentDidMount () {
-      var  Query = Stack.ContentType("blogs_footer_gazi").Query()
+      var  Query = Stack.ContentType("blogs_hero_gazi").Query()
       .toJSON()
       .find()
       .then((result) => {
@@ -24,12 +23,18 @@ export default class Footer extends Component{
     renderList (post) {
       return (
         <main>
-            <div className="container-fluid bg-dark fixed-bottom">
+            <div className="container" >
             {
                 post.map((value, index) => {
                 return (
-                <div className='text-white p-3' key={index}>
-                    <p className='text-center m-0'>{value.copy_right}</p>
+                <div className='text-white p-3' key={index} style={{
+                    background: `url(${value.hero.hero_image.url})`,
+                    height:'100vh',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                  }}>
+                <a className='btn btn-warning' href={value.hero.button.href}>{value.hero.button.title}</a>
+                {/* <a href={'mailto:{value.hero.button.href}'}>{value.hero.button.title}</a> */}
                 </div>
                 )
                 })

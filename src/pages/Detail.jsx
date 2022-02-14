@@ -14,7 +14,7 @@ export default class Detail extends Component{
       .toJSON()
       .fetch()
       .then((result) => {
-        console.log(result)
+        console.log(result);
         this.setState({loading : false, result:result})
       })
       .catch((error) => {
@@ -33,7 +33,7 @@ export default class Detail extends Component{
               <p>Category: { post.categories }</p>
               <p>Author: { post.author }</p>
               <br></br>
-              <img className="img-fluid d-block mx-auto rounded w-75" src={post.image.url}/>       
+              <img className="img-fluid d-block mx-auto rounded w-50" src={post.image.url}/>       
               <div dangerouslySetInnerHTML={{ __html: post.description} } />
               {/* <p>{ post.description }</p> */}
             </div>

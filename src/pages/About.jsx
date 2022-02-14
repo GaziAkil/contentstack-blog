@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react'
 import '../styles/styles.css'
+import Hero from './Hero'
 
 export default class About extends Component{
     constructor() {
@@ -9,7 +10,8 @@ export default class About extends Component{
     }
     render() {
         return (
-            <div className="container">
+            <div className="container"> 
+                <Hero/>
                 <h2>About</h2>
                 <p>Contentstack™ is the hub powering omnichannel content, digital experiences, 
                     and personalized customer journeys. It is the industry 

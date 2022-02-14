@@ -13,6 +13,7 @@ export default class Home extends Component{
       .toJSON()
       .find()
       .then((result) => {
+        console.log(result) 
         this.setState({loading : false, result:result})
       })
       .catch((error) => {
