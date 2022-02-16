@@ -27,13 +27,14 @@ export default class Hero extends Component{
             {
                 post.map((value, index) => {
                 return (
-                <div className='text-white p-3' key={index} style={{
+                <div className='text-white pt-5 text-center' key={index} style={{
                     background: `url(${value.hero.hero_image.url})`,
-                    height:'100vh',
+                    height:'70vh',
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                   }}>
-                <a className='btn btn-warning' href={value.hero.button.href}>{value.hero.button.title}</a>
+                <div className='text-white pb-3' dangerouslySetInnerHTML={{ __html: value.hero.hero_text} } />
+                <a className='btn btn-danger' href={value.hero.button.href}>{value.hero.button.title}</a>
                 {/* <a href={'mailto:{value.hero.button.href}'}>{value.hero.button.title}</a> */}
                 </div>
                 )

@@ -12,15 +12,6 @@ export default class About extends Component{
         return (
             <div className="container"> 
                 <Hero/>
-                <h2>About</h2>
-                <p>Contentstack™ is the hub powering omnichannel content, digital experiences, 
-                    and personalized customer journeys. It is the industry 
-                    leader in the headless content management system (CMS) category. 
-                    Marquee customers include Activision Blizzard, Amway, Best Buy, Chase, 
-                    Cisco, Dell, Ellie Mae, Express, Farm Bureau Insurance, J.D. Power, Martha Stewart, 
-                    Miami HEAT, Riot Games, Shell, Sky, and Walmart. 
-                    Contentstack sits at the heart of an award-winning Digital Experience Platform (DXP) 
-                    and is the exclusive API-first CMS for the SAP Cloud.</p>
             </div>
         )
     }
