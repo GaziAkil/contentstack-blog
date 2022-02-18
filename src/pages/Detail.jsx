@@ -29,16 +29,17 @@ export default class Detail extends Component{
           <div className="row">
             <div className="col-md-10 mx-auto">
               <p>Date: { post.date }</p>
-              <h2 className='title-pink'>{ post.blog_title }</h2>
+              <h4 className='title-pink font-weight-bold'>{ post.blog_title }</h4>
               <p>Category: { post.categories }</p>
               <p>Author: { post.author }</p>
               <br></br>
-              <img className="img-fluid d-block mx-auto rounded w-50" src={post.image.url}/>       
+              <img className="img-fluid d-block mx-auto rounded w-75" src={post.image.url}/>       
               <div dangerouslySetInnerHTML={{ __html: post.description} } />
               {/* <p>{ post.description }</p> */}
             </div>
           </div>
         </div>
+
         </main>
       )
     }

@@ -36,7 +36,7 @@ export default class Hero extends Component{
                           backgroundSize: 'cover',
                           backgroundRepeat: 'no-repeat',
                         }}>
-                      <div className='text-white pb-3' dangerouslySetInnerHTML={{ __html: value.hero.hero_text} } />
+                      <h2 className='tec'><div className='text-white pb-3' dangerouslySetInnerHTML={{ __html: value.hero.hero_text} } /></h2>
                       <a className='btn btn-danger' href={value.hero.button.href}>{value.hero.button.title}</a>
                       {/* <a href={'mailto:{value.hero.button.href}'}>{value.hero.button.title}</a> */}
                       </div>
