@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import '../styles/styles.css'
-import { Link } from 'react-router-dom'
 import { Stack } from '../common/contentstack-api/api'
 
 export default class Footer extends Component{
@@ -24,17 +23,18 @@ export default class Footer extends Component{
     renderList (post) {
       return (
         <main>
-            <div className="container-fluid bg-dark fixed-bottom">
-            {
-                post.map((value, index) => {
-                return (
-                <div className='text-white p-3' key={index}>
-                    <p className='text-center m-0'>{value.copy_right}</p>
+          {
+            post.map((value, index) => {
+              return (
+                <div className="container-fluid bg-dark fixed-bottom" key={index}>
+                  <div className='text-white p-3'>
+                      <p className='text-center m-0'>{value.copy_right}</p>
+                  </div>
                 </div>
-                )
-                })
-            }
-            </div>
+              
+              )
+            })
+          }
         </main>
       )
     }

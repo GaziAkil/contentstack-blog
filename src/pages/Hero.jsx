@@ -23,24 +23,29 @@ export default class Hero extends Component{
     renderList (post) {
       return (
         <main>
-            <div className="container" >
-            {
-                post.map((value, index) => {
-                return (
-                <div className='text-white pt-5 text-center' key={index} style={{
-                    background: `url(${value.hero.hero_image.url})`,
-                    height:'70vh',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                  }}>
-                <div className='text-white pb-3' dangerouslySetInnerHTML={{ __html: value.hero.hero_text} } />
-                <a className='btn btn-danger' href={value.hero.button.href}>{value.hero.button.title}</a>
-                {/* <a href={'mailto:{value.hero.button.href}'}>{value.hero.button.title}</a> */}
+          {
+            post.map((value, index) => {
+              return (
+              
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className='text-white pt-5 text-center' key={index} style={{
+                          background: `url(${value.hero.hero_image.url})`,
+                          height:'70vh',
+                          backgroundSize: 'cover',
+                          backgroundRepeat: 'no-repeat',
+                        }}>
+                      <div className='text-white pb-3' dangerouslySetInnerHTML={{ __html: value.hero.hero_text} } />
+                      <a className='btn btn-danger' href={value.hero.button.href}>{value.hero.button.title}</a>
+                      {/* <a href={'mailto:{value.hero.button.href}'}>{value.hero.button.title}</a> */}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                )
-                })
-            }
-            </div>
+              )
+              })
+          }
         </main>
       )
     }
